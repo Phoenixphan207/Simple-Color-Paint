@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    margin: 0;
+    padding: 30px 20px;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+p {
+    margin: 0 0 25px;
+    color: #555;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: all 0.2s;
+}
+
+.color:hover {
+    transform: scale(1.15);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.color.active {
+    border: 4px solid #000;
+    box-shadow: 0 0 0 6px rgba(0,0,0,0.15);
+}
+
+/* Gán màu cho từng nút */
+.color[data-color="red"]    { background: red; }
+.color[data-color="blue"]   { background: blue; }
+.color[data-color="green"]  { background: #00cc00; }
+.color[data-color="yellow"] { background: yellow; }
+.color[data-color="purple"] { background: purple; }
+.color[data-color="orange"] { background: orange; }
+.color[data-color="black"]  { background: black; }
+
+canvas {
+    border: 3px solid #333;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    cursor: crosshair;
+    border-radius: 8px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Color Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Color Paint</h1>
+    <p>Click and drag your mouse to draw. Select a color from the palette above!</p>
+
+    <!-- Color Palette -->
+    <div class="color-palette">
+        <div class="color" data-color="red" title="Red"></div>
+        <div class="color" data-color="blue" title="Blue"></div>
+        <div class="color" data-color="green" title="Green"></div>
+        <div class="color" data-color="yellow" title="Yellow"></div>
+        <div class="color" data-color="purple" title="Purple"></div>
+        <div class="color" data-color="orange" title="Orange"></div>
+        <div class="color" data-color="black" title="Black"></div>
+    </div>
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
